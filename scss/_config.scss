@@ -3,6 +3,7 @@ $secondary-color:#eece1a;
 $show-home-image:true;
 $home-image:url(../img/bckgd1.jpg);
 $background-opacity:0.5;
+// $main-view:calc(100vh-60px);
 
 @mixin easeOut {
     transition: all 0.5s ease-out;

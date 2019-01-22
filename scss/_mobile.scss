@@ -1,8 +1,14 @@
 // For wide screens
-@include mediaXl {}
+@include mediaXl {
+
+}
 
 // For Desktops and Laptops
-@include mediaLg {}
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 // For Tablets
 @include mediaMd {
@@ -69,6 +75,10 @@
         'job3';
         grid-template-columns: 1fr;
     }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }
 
 // For smart phones
@@ -77,4 +87,6 @@
         margin-top: 10vh;
         // font-size: 4rem;
     }
+
+
 }
