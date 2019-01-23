@@ -61,7 +61,7 @@ header {
 }
 
 main {
-    padding: 4rem;
+    padding: 10vh 15vw;
     // height: 100%;
     min-height: calc(100vh - 60px);
     // background: red;
@@ -88,6 +88,10 @@ main {
     }
 }
 
+// #about{
+//     padding: 10vh 5vw;
+// }
+
 
 .about-info {
     display: grid;
@@ -98,9 +102,10 @@ main {
 
     grid-template-columns: repeat(3, 1fr);
     margin: 0 30px;
+    
 
 
-    .bio-image {
+    .bio-image,{
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
@@ -113,10 +118,24 @@ main {
         justify-content: center;
     }
 
+    .bio-imagesm {
+        visibility: hidden;
+        grid-area: bioimage;
+        border-radius: 50%;
+        ;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: $secondary-color 3px solid;
+        margin: 0 auto;
+    }
+
     .bio {
         grid-area: bio;
         font-size: 1.5rem;
         justify-content: center;
+        
         // margin-right: 30px;
     }
 
@@ -138,6 +157,7 @@ main {
         border-bottom: $secondary-color 5px solid;
         // justify-content: center;
         text-align: left;
+        margin-bottom: 1rem;
     }
 }
 

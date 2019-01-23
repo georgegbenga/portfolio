@@ -48,6 +48,19 @@ $background-opacity:0.5;
 
 // Media query mixins
 
+@mixin mediaxxSm {
+    @media screen and (max-width:450px) {
+        @content;
+    }
+}
+
+
+@mixin mediaxSm {
+    @media screen and (max-width:451px) and (max-width:499px) {
+        @content;
+    }
+}
+
 @mixin mediaSm{
     @media screen and (max-width:500px) {
         @content;

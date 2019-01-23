@@ -90,3 +90,76 @@
 
 
 }
+
+// for really small screens
+
+@include mediaxxSm {
+
+    .about-info .bio-imagesm {
+        transform: translateX(-35px)    ;
+        -webkit-transform: translateX(-35px)    ;
+        -moz-transform: translateX(-35px)    ;
+        -ms-transform: translateX(-35px)    ;
+        -o-transform: translateX(-35px)    ;
+}
+
+    .about-info .bio-image {
+    visibility: hidden;
+}
+
+    .about-info .bio-imagesm {
+        visibility: visible;
+     }
+}
+
+// For smaller screen smart phones
+
+@include mediaxSm {
+    main {
+        text-align: center;
+
+        &#home h1, &#about h1 {
+            font-size: 2.1rem;
+        }
+
+        &#home h2, &#about h2 {
+            font-size: 1.2rem;
+        }
+
+        .lg-heading {
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .sm-heading {
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .menu-nav {
+        & .nav-link {
+            font-size: 1.5rem;
+        }
+        
+    }
+
+    .menu-branding {
+
+        .portrait {
+            background: url('../img/me_xsmall.jpg');
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .trans {
+        transform: translate(-40px,-90px)    ;
+        -webkit-transform: translate(-40px,-90px)    ;
+        -moz-transform: translate(-40px,-90px)    ;
+        -ms-transform: translate(-40px,-90px)    ;
+        -o-transform: translate(-40px,-90px)    ;
+}
+
+    
+}
