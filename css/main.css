@@ -232,6 +232,9 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+#about {
+  padding: 10vh 5vw; }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -257,11 +260,11 @@ main {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border: #eece1a 3px solid;
-    margin: 0 auto; }
+    margin: auto;
+    justify-content: center; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem;
-    justify-content: center; }
+    font-size: 1.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -407,9 +410,11 @@ main {
 @media screen and (max-width: 451px) and (max-width: 499px) {
   main {
     text-align: center; }
-    main#home h1, main#about h1 {
+    main#home h1,
+    main#about h1 {
       font-size: 2.1rem; }
-    main#home h2, main#about h2 {
+    main#home h2,
+    main#about h2 {
       font-size: 1.2rem; }
     main .lg-heading {
       line-height: 1.5;
