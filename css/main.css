@@ -358,7 +358,7 @@ main {
   div.menu-branding {
     float: none;
     width: 100%;
-    min-height: 0; }
+    min-height: 120px; }
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0);
@@ -367,13 +367,14 @@ main {
       -ms-transform: translate3d(0, 0, 0);
       -o-transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 75vh;
     transform: translate3d(-100%, 0, 0);
     -webkit-transform: translate3d(-100%, 0, 0);
     -moz-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
     -o-transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
+  .menu .nav-link {
+    font-size: 18px; }
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
@@ -382,9 +383,9 @@ main {
     -ms-transform: translate3d(100%, 0, 0);
     -o-transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/me_small.jpg");
-      width: 150px;
-      height: 150px; }
+      background: url("../img/me_xsmall.jpg");
+      width: 100px;
+      height: 100px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -393,22 +394,30 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .nav-link {
+    font-size: 18px; } }
 
 @media screen and (max-width: 450px) {
   .about-info .bio-image {
     visibility: hidden; }
   .about-info .bio-imagesm {
-    visibility: visible; } }
+    visibility: visible; }
+  .boxes div {
+    font-size: 0.8rem; } }
 
-@media screen and (max-width: 451px) and (max-width: 499px) {
+@media screen and (max-width: 451px) {
   main {
     text-align: center; }
     main#home h1,
-    main#about h1 {
+    main#about h1,
+    main#work h1,
+    main#contact h1 {
       font-size: 2.1rem; }
     main#home h2,
-    main#about h2 {
+    main#about h2,
+    main#work h2,
+    main#contact h2 {
       font-size: 1.2rem; }
     main .lg-heading {
       line-height: 1.5;
