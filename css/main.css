@@ -396,12 +396,6 @@ main {
     margin-top: 10vh; } }
 
 @media screen and (max-width: 450px) {
-  .about-info .bio-imagesm {
-    transform: translateX(-35px);
-    -webkit-transform: translateX(-35px);
-    -moz-transform: translateX(-35px);
-    -ms-transform: translateX(-35px);
-    -o-transform: translateX(-35px); }
   .about-info .bio-image {
     visibility: hidden; }
   .about-info .bio-imagesm {
@@ -427,10 +421,4 @@ main {
   .menu-branding .portrait {
     background: url("../img/me_xsmall.jpg");
     width: 100px;
-    height: 100px; }
-  .trans {
-    transform: translate(-40px, -90px);
-    -webkit-transform: translate(-40px, -90px);
-    -moz-transform: translate(-40px, -90px);
-    -ms-transform: translate(-40px, -90px);
-    -o-transform: translate(-40px, -90px); } }
+    height: 100px; } }
